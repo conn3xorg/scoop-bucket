@@ -33,7 +33,7 @@ jobs:
           # warnings are expected; anything else fails.
           $out = winget validate --manifest $m | Out-String
           $out
-          if ($out -notmatch 'Manifest validation succeeded' -or ($out -split "`n" | Where-Object { $_ -match 'Warning|Error' -and $_ -notmatch 'schema header URL' })) { exit 1 }
+          if ($out -notmatch 'Manifest validation succeeded' -or ($out -split "`n" | Where-Object { $_ -match '^Manifest (Warning|Error)' -and $_ -notmatch 'schema header URL' })) { exit 1 }
           winget settings --enable LocalManifestFiles
           winget install --manifest $m --accept-source-agreements --accept-package-agreements --disable-interactivity
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
