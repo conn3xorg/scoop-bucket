@@ -23,7 +23,7 @@ Tags:
 - terraform
 - windows-server
 ReleaseNotesUrl: https://github.com/conn3xorg/conn3x/releases/tag/v0.19.0
-Documentation:
+Documentations:
 - DocumentLabel: Docs
   DocumentUrl: https://docs.conn3x.org
 ManifestType: defaultLocale
