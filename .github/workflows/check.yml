@@ -19,24 +19,3 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           conn3x version
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
-  # Temporary: checks the first winget submission, then goes.
-  winget:
-    runs-on: windows-2025
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Validate and install the winget manifest
-        shell: pwsh
-        run: |
-          $m = "winget\manifests\c\Conn3x\Conn3x\0.19.0"
-          winget --version
-          # The runner's winget is older than the 1.28 schema, so header
-          # warnings are expected; anything else fails.
-          $out = winget validate --manifest $m | Out-String
-          $out
-          if ($out -notmatch 'Manifest validation succeeded' -or ($out -split "`n" | Where-Object { $_ -match '^Manifest (Warning|Error)' -and $_ -notmatch 'schema header URL' })) { exit 1 }
-          winget settings --enable LocalManifestFiles
-          winget install --manifest $m --accept-source-agreements --accept-package-agreements --disable-interactivity
-          if ($LASTEXITCODE) { exit $LASTEXITCODE }
-          $env:PATH = "$env:LOCALAPPDATA\Microsoft\WinGet\Links;$env:PATH"
-          conn3x version
-          if ($LASTEXITCODE) { exit $LASTEXITCODE }
