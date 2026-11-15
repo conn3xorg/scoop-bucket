@@ -1,17 +1,22 @@
 {
-    "version": "0.19.0",
-    "description": "One plan for your cloud and the servers it creates.",
-    "homepage": "https://conn3x.org",
-    "license": "MPL-2.0",
+    "version": "0.20.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.19.0/conn3x_0.19.0_windows_amd64.zip",
-            "hash": "5663a67bf82ded2f4ea59538bcbcf3f90efba9f1aacb70dd7cfc73fd1216ed9e"
+            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.20.0/conn3x_0.20.0_windows_amd64.zip",
+            "bin": [
+                "conn3x.exe"
+            ],
+            "hash": "cbb01c7c28c29398fad7817e38b905a1e0375596a9a257c90b28a69ce72b39aa"
         },
         "arm64": {
-            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.19.0/conn3x_0.19.0_windows_arm64.zip",
-            "hash": "dd51982c5fd0e3360c3e87e5b717749a9dd04f637d1fc20619f2b3ab9682d57e"
+            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.20.0/conn3x_0.20.0_windows_arm64.zip",
+            "bin": [
+                "conn3x.exe"
+            ],
+            "hash": "1e976d3295e693d21703bb125f31640a98a2f94bae21bc8566b158c23d494862"
         }
     },
-    "bin": "conn3x.exe"
+    "homepage": "https://conn3x.org",
+    "license": "MPL-2.0",
+    "description": "One plan for your cloud and the servers it creates."
 }
