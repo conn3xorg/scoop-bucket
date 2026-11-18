@@ -1,0 +1,22 @@
+{
+    "version": "0.4.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/conn3xorg/conn3x-ui/releases/download/v0.4.0/conn3x-ui_0.4.0_windows_amd64.zip",
+            "bin": [
+                "conn3x-ui.exe"
+            ],
+            "hash": "a458051fefaa3c2281186f9b4441fac36d1f177f62143422ca1b58c488c5a702"
+        },
+        "arm64": {
+            "url": "https://github.com/conn3xorg/conn3x-ui/releases/download/v0.4.0/conn3x-ui_0.4.0_windows_arm64.zip",
+            "bin": [
+                "conn3x-ui.exe"
+            ],
+            "hash": "410d6ab8c8ae9f4ca82a70fe630557dc630d02f41134c7e525e801a7980be519"
+        }
+    },
+    "homepage": "https://conn3x.org",
+    "license": "MPL-2.0",
+    "description": "A web UI for Conn3x. Plan from the browser, apply exactly that plan."
+}
