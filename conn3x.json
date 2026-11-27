@@ -1,19 +1,19 @@
 {
-    "version": "0.36.0",
+    "version": "0.37.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.36.0/conn3x_0.36.0_windows_amd64.zip",
+            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.37.0/conn3x_0.37.0_windows_amd64.zip",
             "bin": [
                 "conn3x.exe"
             ],
-            "hash": "6a118aaaacd6379a6293e01dd8d3fded88953c582933217832ef0851c7a4109a"
+            "hash": "c5e3d7d2a0516c294c67ff1c5395cf1f7a6c9d0579776edd309f454b70829554"
         },
         "arm64": {
-            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.36.0/conn3x_0.36.0_windows_arm64.zip",
+            "url": "https://github.com/conn3xorg/conn3x/releases/download/v0.37.0/conn3x_0.37.0_windows_arm64.zip",
             "bin": [
                 "conn3x.exe"
             ],
-            "hash": "c9ac027b4742ab383a9c45fae1c34920512011d147d05f024d164805ea4790d2"
+            "hash": "d489a0b85c483ffa2b4a37dc19bb4f9b218c29cc01dd48c49c4ef531b9a0f9f7"
         }
     },
     "homepage": "https://conn3x.org",
